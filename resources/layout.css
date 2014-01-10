@@ -1,0 +1,92 @@
+/*
+ * Add your CSS styles here
+ * 
+ */
+
+#animated {
+/*   margin: 20px;
+    width: 100px; 
+    height: 100px;    
+    background: #f00;*/
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 400ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 400ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform:rotate(0deg);
+  }
+
+  to {
+    -webkit-transform:rotate(360deg);
+  }
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background: #f4f4f4;
+}
+
+h1, h2, h3 {
+	color: #222;
+}
+
+p {
+	line-height: 24px;
+	color: #555;
+}
+
+a {
+	color: green;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	width: 940px;
+	margin: 0 auto;
+}
+
+#header  {
+	border-bottom: 1px solid #999;
+}
+
+#nav {
+	margin: 0 20px 0 0;
+	float: left;
+  /* CHALLENGE 3: how could you get this to float to the left side of the screen? */
+}
+
+#main {
+	margin: 0;
+	padding: 5px;
+
+	border-left: solid 1px red;  
+	float: right;
+  /*  CHALLENGE 3: how could you get this to float to the left side of the screen? */
+  /* CHALLENGE 2: how could you give this element a one-pixel border down its left side? */
+}
+
+#copyright {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+/* Ignore this for now, it is special code needed to fix the layout after using the "float" rules */
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
